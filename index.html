@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <title>Binance Futures</title>
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+</head>
+<body>
+    <h1>Trades</h1>
+
+    <div id="chart"></div>
+
+    <div id="trades"></div>
+    <script src="chart.js"></script>
+    <h3>Settings</h3>
+
+    <div id="settings">
+        <input type="checkbox"/>RSI+Stoch RSI
+        <input type="text" id="rsi_length" name="rsi_length" placeholder="7"/>
+        Oversold
+        <input type="text" id="rsi_oversold" name="rsi_length" placeholder="30"/>
+        Overbought
+        <input type="text" id="rsi_overbought" name="rsi_length" placeholder="70"/>
+    </div>
+
+    <script>
+        // var binanceSocket = new WebSocket("wss://fstream.binance.com/ws/btcusdt@trade")
+
+        var tradeDiv = document.getElementById('trades')
+
+        // binanceSocket.onmessage = function(evt){
+        //     console.log(evt.data);
+        //
+        //     var messageObject = JSON.parse(evt.data)
+        //     tradeDiv.append(messageObject.p)
+        // }
+
+    </script>
+
+
+</body>
+</html>
